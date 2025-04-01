@@ -39,4 +39,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build/web
           branch: gh-pages
-          force_orphan: trueorce_orphan: true
+          force_orphan: true
