@@ -1,9 +1,13 @@
 [
     {"id": 1, "name": "Ko Kai", "sound": "k", "class": "Mid"},
     {"id": 2, "name": "Kho Khai", "sound": "kh", "class": "High"},
+
     {"id": 3, "name": "Kho Khuat", "sound": "kh", "class": "Low"},
+
     {"id": 4, "name": "Kho Khwai", "sound": "kh", "class": "Low"},
+
     {"id": 5, "name": "Kho Khon", "sound": "kh", "class": "Low"},
+
     {"id": 6, "name": "Kho Rakhang", "sound": "kh", "class": "Low"},
     {"id": 7, "name": "Ngo Ngu", "sound": "ng", "class": "Low"},
     {"id": 8, "name": "Cho Chan", "sound": "ch", "class": "Mid"},

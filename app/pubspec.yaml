@@ -60,7 +60,52 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/
-    - assets/consonants/
+    - assets/consonants/1/
+    - assets/consonants/2/
+    - assets/consonants/3/
+    - assets/consonants/4/
+    - assets/consonants/5/
+    - assets/consonants/6/
+    - assets/consonants/7/
+    - assets/consonants/8/
+    - assets/consonants/9/
+    - assets/consonants/10/
+    - assets/consonants/11/
+    - assets/consonants/12/
+    - assets/consonants/13/
+    - assets/consonants/14/
+    - assets/consonants/15/
+    - assets/consonants/16/
+    - assets/consonants/17/
+    - assets/consonants/18/
+    - assets/consonants/19/
+    - assets/consonants/19/
+    - assets/consonants/20/
+    - assets/consonants/21/
+    - assets/consonants/22/
+    - assets/consonants/23/
+    - assets/consonants/24/
+    - assets/consonants/25/
+    - assets/consonants/26/
+    - assets/consonants/27/
+    - assets/consonants/28/
+    - assets/consonants/28/
+    - assets/consonants/29/
+    - assets/consonants/30/
+    - assets/consonants/31/
+    - assets/consonants/32/
+    - assets/consonants/33/
+    - assets/consonants/34/
+    - assets/consonants/35/
+    - assets/consonants/36/
+    - assets/consonants/37/
+    - assets/consonants/38/
+    - assets/consonants/39/
+    - assets/consonants/40/
+    - assets/consonants/41/
+    - assets/consonants/42/
+    - assets/consonants/43/
+    - assets/consonants/44/
     - assets/consonants.json
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
