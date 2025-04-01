@@ -14,29 +14,32 @@ jobs:
     env:
       JAVA_VERSION: "11.0"
       FLUTTER_VERSION: "3.22.2"
+
+
+      runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-java@v3
-        with:
-          java-version: ${{env.JAVA_VERSION}}
-      - uses: subosito/flutter-action@v2
-        with:
-          channel: stable
-          flutter-version: ${{env.FLUTTER_VERSION}}
+    - name: Checkout code
+      uses: actions/checkout@v3
 
-      - name: Enable Flutter Web
-        run: flutter config --enable-web
+    - name: Set up Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        channel: stable
 
-      - name: Install dependencies
-        run: flutter pub get
+    - name: Enable Flutter Web
+      run: flutter config --enable-web
 
-      - name: Build Flutter Web
-        run: flutter build web --release
+    - name: Install dependencies
+      run: flutter pub get
 
-      - name: Deploy to gh-pages branch
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build/web
-          branch: gh-pages
-          force_orphan: true
+    - name: Build Flutter Web
+      run: flutter build web --release
+
+    - name: Deploy to gh-pages branch
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build/web
+        branch: gh-pages
+        force_orphan: true
