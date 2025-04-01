@@ -109,49 +109,51 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
       body:
           _currentConsonant == null
               ? const Center(child: CircularProgressIndicator())
-              : Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.asset(
-                    'assets/consonants/${_currentConsonant!["id"]}/image.png',
-                    height: 200,
-                  ),
-                  const SizedBox(height: 20),
-                  Text("What is the class of this consonant?"),
-                  const SizedBox(height: 10),
-                  ..._classOptions.map(
-                    (c) => RadioListTile<String>(
-                      title: Text(c),
-                      value: c,
-                      groupValue: _selectedClass,
-                      onChanged: (value) {
-                        setState(() {
-                          _selectedClass = value;
-                        });
-                      },
+              : SingleChildScrollView(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      'assets/consonants/${_currentConsonant!["id"]}/image.png',
+                      height: 200,
                     ),
-                  ),
-                  const SizedBox(height: 20),
-                  Text("What is the sound of this consonant?"),
-                  const SizedBox(height: 10),
-                  ..._soundOptions.map(
-                    (sound) => RadioListTile<String>(
-                      title: Text(sound),
-                      value: sound,
-                      groupValue: _selectedSound,
-                      onChanged: (value) {
-                        setState(() {
-                          _selectedSound = value;
-                        });
-                      },
+                    const SizedBox(height: 20),
+                    Text("What is the class of this consonant?"),
+                    const SizedBox(height: 10),
+                    ..._classOptions.map(
+                      (c) => RadioListTile<String>(
+                        title: Text(c),
+                        value: c,
+                        groupValue: _selectedClass,
+                        onChanged: (value) {
+                          setState(() {
+                            _selectedClass = value;
+                          });
+                        },
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 20),
-                  ElevatedButton(
-                    onPressed: _validateAnswer,
-                    child: const Text("Validate"),
-                  ),
-                ],
+                    const SizedBox(height: 20),
+                    Text("What is the sound of this consonant?"),
+                    const SizedBox(height: 10),
+                    ..._soundOptions.map(
+                      (sound) => RadioListTile<String>(
+                        title: Text(sound),
+                        value: sound,
+                        groupValue: _selectedSound,
+                        onChanged: (value) {
+                          setState(() {
+                            _selectedSound = value;
+                          });
+                        },
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    ElevatedButton(
+                      onPressed: _validateAnswer,
+                      child: const Text("Validate"),
+                    ),
+                  ],
+                ),
               ),
     );
   }
