@@ -1,13 +1,9 @@
 [
     {"id": 1, "name": "Ko Kai", "sound": "k", "class": "Mid"},
     {"id": 2, "name": "Kho Khai", "sound": "kh", "class": "High"},
-
     {"id": 3, "name": "Kho Khuat", "sound": "kh", "class": "Low"},
-
     {"id": 4, "name": "Kho Khwai", "sound": "kh", "class": "Low"},
-
     {"id": 5, "name": "Kho Khon", "sound": "kh", "class": "Low"},
-
     {"id": 6, "name": "Kho Rakhang", "sound": "kh", "class": "Low"},
     {"id": 7, "name": "Ngo Ngu", "sound": "ng", "class": "Low"},
     {"id": 8, "name": "Cho Chan", "sound": "ch", "class": "Mid"},
@@ -15,6 +11,7 @@
     {"id": 10, "name": "Cho Chang", "sound": "ch", "class": "Low"},
     {"id": 11, "name": "Cho Choe", "sound": "ch", "class": "Low"},
     {"id": 12, "name": "Yo Ying", "sound": "y", "class": "High"},
+
     {"id": 13, "name": "Do Chada", "sound": "d", "class": "Mid"},
     {"id": 14, "name": "To Patak", "sound": "t", "class": "Mid"},
     {"id": 15, "name": "Tho Than", "sound": "th", "class": "High"},
@@ -23,6 +20,7 @@
     {"id": 18, "name": "No Nen", "sound": "n", "class": "Low"},
     {"id": 19, "name": "Do Dek", "sound": "d", "class": "Mid"},
     {"id": 20, "name": "To Tao", "sound": "t", "class": "Mid"},
+
     {"id": 21, "name": "Tho Thung", "sound": "th", "class": "High"},
     {"id": 22, "name": "Tho Thahan", "sound": "th", "class": "Low"},
     {"id": 23, "name": "Tho Thong", "sound": "th", "class": "Low"},
@@ -45,6 +43,7 @@
     {"id": 40, "name": "Ho Hip", "sound": "h", "class": "High"},
     {"id": 41, "name": "Lo Chula", "sound": "l", "class": "Low"},
     {"id": 42, "name": "O Ang", "sound": "-", "class": "Mid"},
-    {"id": 43, "name": "Ho Nokhuk", "sound": "h", "class": "Low"}
+    {"id": 43, "name": "Ho Nokhuk", "sound": "h", "class": "Low"},
+    {"id": 44, "name": "So sôo", "sound": "s", "class": "Low"}
   ]
   
